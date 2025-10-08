@@ -1,3 +1,9 @@
 body {
   background-color: #f9f7fe;
 }
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
