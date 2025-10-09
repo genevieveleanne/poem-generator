@@ -1,18 +1,69 @@
 body {
-  background-color: #f9f7fe;
+  background: radial-gradient(
+    circle at 5.3% 17.2%,
+    rgb(255, 208, 253) 0%,
+    rgb(255, 237, 216) 90%
+  );
 }
+/*Font weights: 100-900. Can be italic too*/
 
 h1,
 form,
+small,
 footer {
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
 }
 
+h1 {
+  color: #f91297;
+}
+
+footer {
+  margin-top: 50px;
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  color: #f91297;
+}
+
 .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
-  border: 1px solid black;
   margin-top: 30px;
+}
+
+.text-input {
+  width: 40%;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 1px solid #f91297;
+  font-size: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:hover {
+  background: white;
+  color: #f91297;
+  cursor: pointer;
+}
+
+.submit-button {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 1px solid #f91297;
+  color: white;
+  background: #f91297;
+  font-size: 15px;
+  transition: all 150ms ease-in-out;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }

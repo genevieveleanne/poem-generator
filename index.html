@@ -16,10 +16,20 @@
     <div class="container">
       <h1>Poem Generator</h1>
 
-      <form>
-        <input type="text" autocomplete="off" required />
-        <input type="submit" value="Generate Poem" />
-      </form>
+      <div>
+        <form>
+          <input
+            type="text"
+            class="text-input"
+            placeholder="Enter the topic of the poem"
+            autocomplete="off"
+            required
+          />
+          <input type="submit" value="Generate Poem" class="submit-button" />
+        </form>
+
+        <small> e.g. Love, Sunrise, or Summer </small>
+      </div>
 
       <div>
         The poem will go here.
