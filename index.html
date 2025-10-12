@@ -13,28 +13,24 @@
     <title>Poem Generator</title>
   </head>
   <body>
-    <div class="container">
+    <div class="app-container">
       <h1>Poem Generator</h1>
 
-      <div>
-        <form>
-          <input
-            type="text"
-            class="text-input"
-            placeholder="Enter the topic of the poem"
-            autocomplete="off"
-            required
-          />
-          <input type="submit" value="Generate Poem" class="submit-button" />
-        </form>
+      <form>
+        <input
+          type="text"
+          class="text-input"
+          placeholder="Enter the topic of the poem"
+          autocomplete="off"
+          required
+        />
+        <input type="submit" value="Generate Poem" class="submit-button" />
+      </form>
 
-        <small> e.g. Love, Sunrise, or Summer </small>
-      </div>
+      <div class="hint">e.g. Love, Sunrise, Summer, etc.</small>
 
-      <div>
-        The poem will go here.
-        <br />
-        The poem will go here.
+      <div class="poem">
+        <span>The poem will go here</span>
       </div>
 
       <footer>
