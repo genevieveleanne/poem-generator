@@ -1,8 +1,11 @@
 function displayPoem(event) {
   event.preventDefault();
 
-  let poem = document.querySelector("#poem");
-  poem.innerHTML = "The poem will go here";
+  new Typewriter("#poem", {
+    strings: "The poem will go here",
+    autoStart: true,
+    delay: 75,
+  });
 }
 
 let poemGeneratorForm = document.querySelector("#poem-generator-form");
