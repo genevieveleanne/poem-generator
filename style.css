@@ -123,3 +123,13 @@ a:hover {
 .hidden {
   display: none;
 }
+
+/*.blink-animation {
+  animation: blink 1s steps(5, start) infinte;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}*/
