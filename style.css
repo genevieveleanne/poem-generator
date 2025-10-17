@@ -20,6 +20,12 @@ footer {
   text-align: center;
 }
 
+footer,
+.poem,
+.text-input {
+  color: #4d4b4b;
+}
+
 .submit-button,
 .text-input,
 .poem {
@@ -62,13 +68,13 @@ footer {
   font-style: italic;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: underline;
   cursor: pointer;
-}
-
-a {
-  text-decoration: none;
 }
 
 .app-container {
@@ -81,16 +87,20 @@ a {
   padding: 15px 20px;
 }
 
-.submit-button:hover {
-  background: #fff;
-  color: #f91297;
-  cursor: pointer;
+.text-input:focus {
+  outline: none;
 }
 
 .submit-button {
   padding: 14px 20px;
   color: #fff;
   background: #f91297;
+}
+
+.submit-button:hover {
+  background: #fff;
+  color: #f91297;
+  cursor: pointer;
 }
 
 .hint {
