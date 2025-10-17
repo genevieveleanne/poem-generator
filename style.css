@@ -88,7 +88,7 @@ a:hover {
 }
 
 .text-input:focus {
-  outline: none;
+  outline-color: #4d4b4b;
 }
 
 .submit-button {
