@@ -119,3 +119,7 @@ a:hover {
   background-color: #fff;
   line-height: 2;
 }
+
+.hidden {
+  display: none;
+}
