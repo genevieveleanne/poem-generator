@@ -21,7 +21,7 @@ function getAiApi() {
 
   let poem = document.querySelector("#poem");
   poem.classList.remove("hidden");
-  poem.innerHTML = `⏳ Generating a poem about ${userInput.value}`;
+  poem.innerHTML = `<span class="blink">⏳ Generating a poem about ${userInput.value}</span>`;
 }
 
 function handleSubmit(event) {

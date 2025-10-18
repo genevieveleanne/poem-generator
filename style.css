@@ -124,12 +124,24 @@ a:hover {
   display: none;
 }
 
-/*.blink-animation {
-  animation: blink 1s steps(5, start) infinte;
+.blink {
+  animation: blink 1s ease-in-out infinite;
 }
 
 @keyframes blink {
-  to {
-    visibility: hidden;
+  0% {
+    opacity: 1;
   }
-}*/
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
