@@ -9,9 +9,11 @@ function displayPoem(response) {
 
 function getAiApi() {
   let userInput = document.querySelector("#user-input");
+  let userInputValue = userInput.value;
+  userInputValue = userInputValue.trim().toLowerCase();
 
   let apiKey = "1bac80fa0c32ft537387a483f19bf3fo";
-  let prompt = `Please write a 4 line poem in English about ${userInput.value}`;
+  let prompt = `Please write a 4 line poem in English about ${userInputValue}`;
   let context =
     "You are a poet who loves to write poems that rhyme. Please separate the first three lines with a <br />.";
 
@@ -21,7 +23,7 @@ function getAiApi() {
 
   let poem = document.querySelector("#poem");
   poem.classList.remove("hidden");
-  poem.innerHTML = `<span class="blink">⏳ Generating a poem about ${userInput.value}</span>`;
+  poem.innerHTML = `<span class="blink">⏳ Generating a poem about ${userInputValue}</span>`;
 }
 
 function handleSubmit(event) {
