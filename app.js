@@ -1,3 +1,29 @@
+//Poem on page load
+function onLoad() {
+  let poem = document.querySelector("#poem");
+  poem.classList.remove("hidden");
+  poem.innerHTML = `<span class="blink">⏳ Generating a poem about coding</span>`;
+
+  let apiKey = "1bac80fa0c32ft537387a483f19bf3fo";
+  let prompt = `Please write a 4 line poem in English about coding`;
+  let context =
+    "You are a poet who loves to write poems that rhyme. Please separate the first three lines with a <br />.";
+
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  axios.get(apiUrl).then((response) => {
+    new Typewriter("#poem", {
+      strings: response.data.answer,
+      autoStart: true,
+      delay: 75,
+      cursor: "",
+    });
+  });
+}
+
+onLoad();
+
+//User's poem
 function displayPoem(response) {
   new Typewriter("#poem", {
     strings: response.data.answer,
