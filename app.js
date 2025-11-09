@@ -1,4 +1,4 @@
-//Poem on page load
+//POEM ON PAGE LOAD
 function onLoad() {
   let poem = document.querySelector("#poem");
   poem.classList.remove("hidden");
@@ -23,7 +23,7 @@ function onLoad() {
 
 onLoad();
 
-//User's poem
+//USER'S POEM
 function displayPoem(response) {
   new Typewriter("#poem", {
     strings: response.data.answer,
